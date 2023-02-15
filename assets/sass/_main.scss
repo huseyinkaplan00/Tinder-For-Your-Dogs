@@ -1,0 +1,173 @@
+main {
+    .main-header {
+
+        .profile-photo {
+            .main-photo {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+
+                .name-and-photo {
+                    position: relative;
+
+                    .dog-photo-title {
+                        .main-photo-img {
+
+                            width: 100%;
+                            border-radius: 15px;
+                        }
+
+                        .name {
+
+                            position: absolute;
+                            bottom: 23.67px;
+                            left: 20.34px;
+
+                            h1 {
+
+                                font-weight: 600;
+                                font-size: 2rem;
+                                line-height: 36px;
+                                color: #F8F8F8;
+                                margin-bottom: 7.23px;
+                            }
+
+                            p {
+                                font-weight: 400;
+                                font-size: 1.5rem;
+                                line-height: 32px;
+                                color: #B7B7B7;
+                                text-shadow: -1px -2px 3px #070707;
+                                width: 95%;
+                                text-shadow: -1px -2px 3px #070707;
+                                border-radius: 10px;
+                                padding: 10px;
+                                background: #0b0404bf;
+                            }
+                        }
+                    }
+
+                    .finish-screen {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        margin-bottom: 100px;
+                        padding: 10px;
+
+                        img {
+                            width: 100%;
+                            max-width: 200px;
+                            background-color: rgba(255, 255, 255, 0.481);
+                            border-radius: 50%;
+
+
+                        }
+
+                        h1,
+                        p,
+                        button {
+                            text-align: center;
+                            margin-top: 1.5em;
+                        }
+
+                        h1 {
+                            font-size: 1.5rem;
+                            letter-spacing: -2px;
+                            line-height: 1.1;
+                            text-shadow: 0 2px 2px rgb(0 0 0 / 50%);
+                        }
+
+                        p {
+                            font-size: .9rem;
+                            letter-spacing: -1px;
+                            line-height: 1;
+                        }
+
+                        button {
+                            padding: 1em 2em;
+                            border-radius: 10px;
+                            text-transform: uppercase;
+                            color: whitesmoke;
+                            background: rgb(253, 58, 115);
+                            background: linear-gradient(67deg, rgb(253 58 115) 0%, rgb(253, 58, 115) 44%, rgb(227 119 30 / 90%) 81%);
+                            box-shadow: 0px 0px 4px 1px #10101066;
+                            font-weight: 600;
+                        }
+                    }
+
+
+                }
+
+                .like-nope-icon {
+                    position: absolute;
+                    left: 14px;
+                    top: 54px;
+
+
+                    .icon-like,
+                    .icon-nope {
+                        width: 233.91px;
+                        height: 116.26px;
+                        border-radius: 10.3807px;
+                        transform: rotate(-30deg);
+                    }
+                }
+            }
+
+
+        }
+    }
+
+    .main-icons {
+        margin-top: 10px;
+    }
+
+    .main-icons,
+    .main-icon-one,
+    .main-icon-two {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .main-icon-one,
+        .main-icon-two {
+            img {
+                transition: .5s ease-in-out;
+
+                &:hover {
+                    transform: rotate(360deg);
+                }
+            }
+
+            width: 91.87px;
+            height: 91.87px;
+            background: #FFFFFF;
+            box-shadow: 0px 10px 20px #E9E9EA;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: .5s ease-in-out;
+        }
+
+        .main-icon-one {
+            margin-right: 24.13px;
+
+            &:hover {
+                background: #30151e;
+                box-shadow: 0px 10px 20px #EDD9DF;
+            }
+        }
+
+        .main-icon-two {
+
+
+            &:hover {
+                background: rgb(41 65 58);
+                box-shadow: 0px 10px 20px #c2f5e6;
+            }
+
+        }
+    }
+
+}

@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+header {
+  background: #fff;
+}
+header .header-container {
+  height: 5.0625em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25em 1.1875em 1.1875em 1.125em;
+}
+
+main .main-header .profile-photo .main-photo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+main .main-header .profile-photo .main-photo .name-and-photo {
+  position: relative;
+}
+main .main-header .profile-photo .main-photo .name-and-photo .dog-photo-title .main-photo-img {
+  width: 100%;
+  border-radius: 15px;
+}
+main .main-header .profile-photo .main-photo .name-and-photo .dog-photo-title .name {
+  position: absolute;
+  bottom: 23.67px;
+  left: 20.34px;
+}
+main .main-header .profile-photo .main-photo .name-and-photo .dog-photo-title .name h1 {
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 36px;
+  color: #F8F8F8;
+  margin-bottom: 7.23px;
+}
+main .main-header .profile-photo .main-photo .name-and-photo .dog-photo-title .name p {
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 32px;
+  color: #B7B7B7;
+  text-shadow: -1px -2px 3px #070707;
+  width: 95%;
+  text-shadow: -1px -2px 3px #070707;
+  border-radius: 10px;
+  padding: 10px;
+  background: rgba(11, 4, 4, 0.7490196078);
+}
+main .main-header .profile-photo .main-photo .name-and-photo .finish-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 100px;
+  padding: 10px;
+}
+main .main-header .profile-photo .main-photo .name-and-photo .finish-screen img {
+  width: 100%;
+  max-width: 200px;
+  background-color: rgba(255, 255, 255, 0.481);
+  border-radius: 50%;
+}
+main .main-header .profile-photo .main-photo .name-and-photo .finish-screen h1,
+main .main-header .profile-photo .main-photo .name-and-photo .finish-screen p,
+main .main-header .profile-photo .main-photo .name-and-photo .finish-screen button {
+  text-align: center;
+  margin-top: 1.5em;
+}
+main .main-header .profile-photo .main-photo .name-and-photo .finish-screen h1 {
+  font-size: 1.5rem;
+  letter-spacing: -2px;
+  line-height: 1.1;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+}
+main .main-header .profile-photo .main-photo .name-and-photo .finish-screen p {
+  font-size: 0.9rem;
+  letter-spacing: -1px;
+  line-height: 1;
+}
+main .main-header .profile-photo .main-photo .name-and-photo .finish-screen button {
+  padding: 1em 2em;
+  border-radius: 10px;
+  text-transform: uppercase;
+  color: whitesmoke;
+  background: rgb(253, 58, 115);
+  background: linear-gradient(67deg, rgb(253, 58, 115) 0%, rgb(253, 58, 115) 44%, rgba(227, 119, 30, 0.9) 81%);
+  box-shadow: 0px 0px 4px 1px rgba(16, 16, 16, 0.4);
+  font-weight: 600;
+}
+main .main-header .profile-photo .main-photo .like-nope-icon {
+  position: absolute;
+  left: 14px;
+  top: 54px;
+}
+main .main-header .profile-photo .main-photo .like-nope-icon .icon-like,
+main .main-header .profile-photo .main-photo .like-nope-icon .icon-nope {
+  width: 233.91px;
+  height: 116.26px;
+  border-radius: 10.3807px;
+  transform: rotate(-30deg);
+}
+main .main-icons {
+  margin-top: 10px;
+}
+main .main-icons,
+main .main-icon-one,
+main .main-icon-two {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .main-icons .main-icon-one,
+main .main-icons .main-icon-two,
+main .main-icon-one .main-icon-one,
+main .main-icon-one .main-icon-two,
+main .main-icon-two .main-icon-one,
+main .main-icon-two .main-icon-two {
+  width: 91.87px;
+  height: 91.87px;
+  background: #FFFFFF;
+  box-shadow: 0px 10px 20px #E9E9EA;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+main .main-icons .main-icon-one img,
+main .main-icons .main-icon-two img,
+main .main-icon-one .main-icon-one img,
+main .main-icon-one .main-icon-two img,
+main .main-icon-two .main-icon-one img,
+main .main-icon-two .main-icon-two img {
+  transition: 0.5s ease-in-out;
+}
+main .main-icons .main-icon-one img:hover,
+main .main-icons .main-icon-two img:hover,
+main .main-icon-one .main-icon-one img:hover,
+main .main-icon-one .main-icon-two img:hover,
+main .main-icon-two .main-icon-one img:hover,
+main .main-icon-two .main-icon-two img:hover {
+  transform: rotate(360deg);
+}
+main .main-icons .main-icon-one,
+main .main-icon-one .main-icon-one,
+main .main-icon-two .main-icon-one {
+  margin-right: 24.13px;
+}
+main .main-icons .main-icon-one:hover,
+main .main-icon-one .main-icon-one:hover,
+main .main-icon-two .main-icon-one:hover {
+  background: #30151e;
+  box-shadow: 0px 10px 20px #EDD9DF;
+}
+main .main-icons .main-icon-two:hover,
+main .main-icon-one .main-icon-two:hover,
+main .main-icon-two .main-icon-two:hover {
+  background: rgb(41, 65, 58);
+  box-shadow: 0px 10px 20px #c2f5e6;
+}
+
+.d-none {
+  display: none;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 400px) {
+  .name-and-photo {
+    margin-top: 38px;
+  }
+  .main-icon-one,
+  .main-icon-two {
+    width: 60.87px !important;
+    height: 60.87px !important;
+  }
+  .header-container {
+    height: 6.8125em !important;
+  }
+}
+@media (min-width: 420px) {
+  .main-photo-img {
+    height: 585px;
+  }
+}
+@media (min-width: 400px) {
+  .finish-screen {
+    margin-top: 5.5em;
+  }
+}
+@media (max-width: 320px) {
+  .name-and-photo {
+    margin-top: 93px;
+  }
+}
+@media (max-width: 260px) {
+  .name-and-photo {
+    margin-top: 113px;
+  }
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #FFDEE9;
+  background-image: linear-gradient(0deg, #FFDEE9 0%, #ffb5fd 1000%);
+}/*# sourceMappingURL=style.css.map */

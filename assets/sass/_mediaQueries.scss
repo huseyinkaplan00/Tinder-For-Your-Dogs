@@ -1,0 +1,50 @@
+@media (max-width: 400px) {
+    .name-and-photo {
+        margin-top: 38px;
+    }
+
+
+    .main-icon-one,
+    .main-icon-two {
+        width: 60.87px !important;
+        height: 60.87px !important;
+
+
+    }
+
+    .header-container {
+        height: 6.8125em !important;
+    }
+}
+
+@media (min-width:420px) {
+    .main-photo-img {
+        height: 585px;
+    }
+
+
+
+
+}
+
+@media(min-width:400px) {
+    .finish-screen {
+        margin-top: 5.5em;
+
+    }
+}
+
+
+@media (max-width: 320px) {
+    .name-and-photo {
+        margin-top: 93px;
+    }
+
+}
+
+@media (max-width: 260px) {
+    .name-and-photo {
+        margin-top: 113px;
+    }
+
+}
