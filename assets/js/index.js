@@ -27,20 +27,22 @@ const noIcon = () => {
 
 
     if (!newDogs.hasBeenSwiped) {
+        document.querySelector(".icon-nope").classList.remove("d-none")
 
+        setTimeout(() => {
+            document.querySelector(".icon-nope").classList.add("d-none")
+        }, 1000);
         if (allDogs.length > 0) {
-            newDogs = getNewDog()
-            render()
-            document.querySelector(".icon-nope").classList.remove("d-none")
-
             setTimeout(() => {
-                document.querySelector(".icon-nope").classList.add("d-none")
-            }, 500);
+                newDogs = getNewDog()
+                render()
+            }, 1500);
         }
 
         else {
-
-            endScreen()
+            setTimeout(() => {
+                endScreen()
+            }, 2500);
         }
 
     }
@@ -51,24 +53,22 @@ const yesIcon = () => {
 
 
     if (!newDogs.hasBeenSwiped) {
+        document.querySelector(".icon-like").classList.remove("d-none")
 
+        setTimeout(() => {
+            document.querySelector(".icon-like").classList.add("d-none")
+        }, 1000);
         if (allDogs.length > 0) {
-
-            newDogs = getNewDog()
-            render()
-
-            document.querySelector(".icon-like").classList.remove("d-none")
-
             setTimeout(() => {
-                document.querySelector(".icon-like").classList.add("d-none")
-            }, 500);
+                newDogs = getNewDog()
+                render()
+            }, 1500);
         }
 
         else {
             setTimeout(() => {
                 endScreen()
-            }, 500);
-
+            }, 2200);
         }
 
     }

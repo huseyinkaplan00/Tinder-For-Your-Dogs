@@ -95,7 +95,7 @@ main .main-header .profile-photo .main-photo .like-nope-icon {
 }
 main .main-header .profile-photo .main-photo .like-nope-icon .icon-like,
 main .main-header .profile-photo .main-photo .like-nope-icon .icon-nope {
-  width: 233.91px;
+  width: 100%;
   height: 116.26px;
   border-radius: 10.3807px;
   transform: rotate(-30deg);
@@ -170,6 +170,11 @@ button {
 @media (max-width: 400px) {
   .name-and-photo {
     margin-top: 38px;
+  }
+  .icon-like,
+  .icon-nope {
+    width: 150px !important;
+    height: 75.26px !important;
   }
   .main-icon-one,
   .main-icon-two {
