@@ -12,7 +12,7 @@ Tinder app for dogs. TinDogs for finding a date for your lonely dogs!
 ## Built with
 
 - Semantic HTML5 markup
-- CSS custom properties and SCSS
+- CSS pre-processor sass 
 - Vanilla JavaScript ( Classes, Object destructuring, Array constructor and more...)
 - Flexbox 
 - Fully Responsive, Mobile-first workflow
