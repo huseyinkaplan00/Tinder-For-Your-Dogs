@@ -17,13 +17,7 @@ document.addEventListener("click", (e) => {
 let allDogs = ['rex', 'bella', 'teddy', 'milo', 'duke', 'cooper', 'stella']
 
 // Function to apply transition effect
-const applyTransitionEffect = (direction) => {
-    const dogPhotoTitle = document.querySelector(".dog-photo-title");
-    dogPhotoTitle.style.opacity = 1;
-    dogPhotoTitle.style.transform = `translateY(${direction})`;
-  };
-  
-  const applyOpeningEffect = () => {
+const applyOpeningEffect = () => {
     setTimeout(() => {
       const dogPhotoTitle = document.querySelector(".dog-photo-title");
       const dogName = document.querySelector(".dog-name");
@@ -36,7 +30,16 @@ const applyTransitionEffect = (direction) => {
           element.style.transform = "translateY(0)";
         }
       });
-    }, 500); // You can adjust this delay time
+    }, 100); // You can adjust this delay time
+  };
+  
+  // Function to apply transition effect
+  const applyTransitionEffect = (direction) => {
+    const dogPhotoTitle = document.querySelector(".dog-photo-title");
+    if (dogPhotoTitle) {
+      dogPhotoTitle.style.opacity = 0;
+      dogPhotoTitle.style.transform = `translateY(${direction})`;
+    }
   };
 const getNewDog = () => {
     const nextDogData = dogs[allDogs.shift()]
@@ -134,8 +137,6 @@ const endScreen = () => {
 let newDogs = getNewDog()
 function render() {
     applyOpeningEffect();
-    applyTransitionEffect();
-    
     document.getElementById("dogTitle").innerHTML = newDogs.getDogHtml()
 }
 render()

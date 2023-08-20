@@ -97,8 +97,7 @@ main
 }
 
 /* Opening Effect for Content */
-.name-and-photo .dog-photo-title,
-.name-and-photo .dog-name {
+.name-and-photo .dog-photo-title {
   opacity: 0;
   transform: translateY(-50px);
   transition: all 0.5s ease;
