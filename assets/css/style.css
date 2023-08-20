@@ -19,27 +19,75 @@ main .main-header .profile-photo .main-photo {
 main .main-header .profile-photo .main-photo .name-and-photo {
   position: relative;
 }
-main .main-header .profile-photo .main-photo .name-and-photo .dog-photo-title .main-photo-img {
+
+/* Transition Effect for Images */
+.name-and-photo .dog-photo-title {
+  transition: all 0.5s ease;
+  opacity: 0;
+  transform: translateY(-100%);
+}
+
+/* Transition Effect for Like */
+.icon-like {
+  transition: all 0.5s ease;
+  transform: translateY(100%);
+}
+
+/* Transition Effect for Nope */
+.icon-nope {
+  transition: all 0.5s ease;
+  transform: translateY(100%);
+}
+
+main
+  .main-header
+  .profile-photo
+  .main-photo
+  .name-and-photo
+  .dog-photo-title
+  .main-photo-img {
   width: 100%;
   border-radius: 15px;
 }
-main .main-header .profile-photo .main-photo .name-and-photo .dog-photo-title .name {
+main
+  .main-header
+  .profile-photo
+  .main-photo
+  .name-and-photo
+  .dog-photo-title
+  .name {
   position: absolute;
   bottom: 23.67px;
   left: 20.34px;
 }
-main .main-header .profile-photo .main-photo .name-and-photo .dog-photo-title .name h1 {
+
+main
+  .main-header
+  .profile-photo
+  .main-photo
+  .name-and-photo
+  .dog-photo-title
+  .name
+  h1 {
   font-weight: 600;
   font-size: 2rem;
   line-height: 36px;
-  color: #F8F8F8;
+  color: #f8f8f8;
   margin-bottom: 7.23px;
 }
-main .main-header .profile-photo .main-photo .name-and-photo .dog-photo-title .name p {
+
+main
+  .main-header
+  .profile-photo
+  .main-photo
+  .name-and-photo
+  .dog-photo-title
+  .name
+  p {
   font-weight: 400;
   font-size: 1.5rem;
   line-height: 32px;
-  color: #B7B7B7;
+  color: #b7b7b7;
   text-shadow: -1px -2px 3px #070707;
   width: 95%;
   text-shadow: -1px -2px 3px #070707;
@@ -47,6 +95,23 @@ main .main-header .profile-photo .main-photo .name-and-photo .dog-photo-title .n
   padding: 10px;
   background: rgba(11, 4, 4, 0.7490196078);
 }
+
+/* Opening Effect for Content */
+.name-and-photo .dog-photo-title,
+.name-and-photo .dog-name {
+  opacity: 0;
+  transform: translateY(-50px);
+  transition: all 0.5s ease;
+}
+
+/* Opening Effect for Icons */
+.icon-like,
+.icon-nope {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.5s ease;
+}
+
 main .main-header .profile-photo .main-photo .name-and-photo .finish-screen {
   display: flex;
   flex-direction: column;
@@ -55,7 +120,14 @@ main .main-header .profile-photo .main-photo .name-and-photo .finish-screen {
   margin-bottom: 100px;
   padding: 10px;
 }
-main .main-header .profile-photo .main-photo .name-and-photo .finish-screen img {
+
+main
+  .main-header
+  .profile-photo
+  .main-photo
+  .name-and-photo
+  .finish-screen
+  img {
   width: 100%;
   max-width: 200px;
   background-color: rgba(255, 255, 255, 0.481);
@@ -63,7 +135,13 @@ main .main-header .profile-photo .main-photo .name-and-photo .finish-screen img 
 }
 main .main-header .profile-photo .main-photo .name-and-photo .finish-screen h1,
 main .main-header .profile-photo .main-photo .name-and-photo .finish-screen p,
-main .main-header .profile-photo .main-photo .name-and-photo .finish-screen button {
+main
+  .main-header
+  .profile-photo
+  .main-photo
+  .name-and-photo
+  .finish-screen
+  button {
   text-align: center;
   margin-top: 1.5em;
 }
@@ -78,13 +156,24 @@ main .main-header .profile-photo .main-photo .name-and-photo .finish-screen p {
   letter-spacing: -1px;
   line-height: 1;
 }
-main .main-header .profile-photo .main-photo .name-and-photo .finish-screen button {
+main
+  .main-header
+  .profile-photo
+  .main-photo
+  .name-and-photo
+  .finish-screen
+  button {
   padding: 1em 2em;
   border-radius: 10px;
   text-transform: uppercase;
   color: whitesmoke;
   background: rgb(253, 58, 115);
-  background: linear-gradient(67deg, rgb(253, 58, 115) 0%, rgb(253, 58, 115) 44%, rgba(227, 119, 30, 0.9) 81%);
+  background: linear-gradient(
+    67deg,
+    rgb(253, 58, 115) 0%,
+    rgb(253, 58, 115) 44%,
+    rgba(227, 119, 30, 0.9) 81%
+  );
   box-shadow: 0px 0px 4px 1px rgba(16, 16, 16, 0.4);
   font-weight: 600;
 }
@@ -118,8 +207,8 @@ main .main-icon-two .main-icon-one,
 main .main-icon-two .main-icon-two {
   width: 91.87px;
   height: 91.87px;
-  background: #FFFFFF;
-  box-shadow: 0px 10px 20px #E9E9EA;
+  background: #ffffff;
+  box-shadow: 0px 10px 20px #e9e9ea;
   border-radius: 50%;
   cursor: pointer;
   transition: 0.5s ease-in-out;
@@ -149,7 +238,7 @@ main .main-icons .main-icon-one:hover,
 main .main-icon-one .main-icon-one:hover,
 main .main-icon-two .main-icon-one:hover {
   background: #30151e;
-  box-shadow: 0px 10px 20px #EDD9DF;
+  box-shadow: 0px 10px 20px #edd9df;
 }
 main .main-icons .main-icon-two:hover,
 main .main-icon-one .main-icon-two:hover,
@@ -215,6 +304,6 @@ button {
 
 body {
   font-family: "Poppins", sans-serif;
-  background-color: #FFDEE9;
-  background-image: linear-gradient(0deg, #FFDEE9 0%, #ffb5fd 1000%);
-}/*# sourceMappingURL=style.css.map */
+  background-color: #ffdee9;
+  background-image: linear-gradient(0deg, #ffdee9 0%, #ffb5fd 1000%);
+} /*# sourceMappingURL=style.css.map */
