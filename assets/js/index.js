@@ -51,53 +51,44 @@ const getNewDog = () => {
 const noIcon = () => {
 
     applyTransitionEffect("2%");
-    if (!newDogs.hasBeenSwiped) {
-        document.querySelector(".icon-nope").classList.remove("d-none")
+  document.querySelector(".icon-nope").classList.remove("d-none");
 
-        setTimeout(() => {
-            document.querySelector(".icon-nope").classList.add("d-none")
-        }, 1000);
-        if (allDogs.length > 0) {
-            setTimeout(() => {
-                newDogs = getNewDog()
-                render()
-            }, 1500);
-        }
+  setTimeout(() => {
+    document.querySelector(".icon-nope").classList.add("d-none");
+  }, 300);
 
-        else {
-            setTimeout(() => {
-                endScreen()
-            }, 2500);
-        }
-
-    }
+  if (allDogs.length > 0) {
+    setTimeout(() => {
+      newDogs = getNewDog();
+      render();
+    }, 800);
+  } else {
+    setTimeout(() => {
+      endScreen();
+    }, 1200);
+  }
 }
 
 
 const yesIcon = () => {
 
     applyTransitionEffect("-2%");
+  document.querySelector(".icon-like").classList.remove("d-none");
 
-    if (!newDogs.hasBeenSwiped) {
-        document.querySelector(".icon-like").classList.remove("d-none")
+  setTimeout(() => {
+    document.querySelector(".icon-like").classList.add("d-none");
+  }, 300);
 
-        setTimeout(() => {
-            document.querySelector(".icon-like").classList.add("d-none")
-        }, 1000);
-        if (allDogs.length > 0) {
-            setTimeout(() => {
-                newDogs = getNewDog()
-                render()
-            }, 1500);
-        }
-
-        else {
-            setTimeout(() => {
-                endScreen()
-            }, 2200);
-        }
-
-    }
+  if (allDogs.length > 0) {
+    setTimeout(() => {
+      newDogs = getNewDog();
+      render();
+    }, 800);
+  } else {
+    setTimeout(() => {
+      endScreen();
+    }, 1200);
+  }
 
 }
 
