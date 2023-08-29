@@ -1,4 +1,4 @@
-# TinDogs
+# Tinder For Your Dogs
 
 ## Table of Contents
 
