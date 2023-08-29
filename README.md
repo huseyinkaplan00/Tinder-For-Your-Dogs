@@ -13,7 +13,7 @@
 
 ## Description
 
-TinDogs is a playful and engaging web application designed to find a date for your lonely dogs. Inspired by the popular dating app Tinder, TinDogs brings a unique twist to pet socialization, allowing owners to swipe right or left on potential matches.
+Tinder for your dogs is a playful and engaging web application designed to find a date for your lonely dogs. Inspired by the popular dating app Tinder, TinDogs brings a unique twist to pet socialization, allowing owners to swipe right or left on potential matches.
 
 ## Features
 
